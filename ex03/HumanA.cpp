@@ -6,7 +6,7 @@
 /*   By: alaassir <alaassir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/28 20:12:47 by alaassir          #+#    #+#             */
-/*   Updated: 2024/04/28 21:19:59 by alaassir         ###   ########.fr       */
+/*   Updated: 2024/05/29 14:03:56 by alaassir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ HumanA::~HumanA()
     std::cout << "HumanA saying GoodByee!" << std::endl;
 }
 
-void	HumanA::attack(void)
+void	HumanA::attack(void) const
 {
 	std::cout << this->name << " attacks with their " << this->weaponA.getType() << std::endl;
 }
