@@ -6,7 +6,7 @@
 /*   By: alaassir <alaassir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/28 21:34:11 by alaassir          #+#    #+#             */
-/*   Updated: 2024/04/28 22:58:13 by alaassir         ###   ########.fr       */
+/*   Updated: 2024/05/31 08:47:04 by alaassir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,9 +38,9 @@ bool	open_and_replace(std::string str, std::string filename, std::string oldW, s
 int main(int ac, char **av)
 {
 	std::string	str;
-	if (ac != 4)
+	if (ac != 4 || av[3][0] == '\0')
 	{
-		std::cout << "Usage `./sed <filename> s1 s2`" << std::endl;
+		std::cout << "Usage `./ex04 <filename> s1 s2`" << std::endl;
 		return (1);
 	}
 	std::ifstream input(av[1]);
